@@ -7,6 +7,7 @@
 }
 
 :root {
+    scroll-behavior: smooth;
     --ff-title: 'Montserrat', sans-serif;
     --ff-text: 'Varela Round', sans-serif;
     --clr-primario: rgb(33, 36, 41);
@@ -79,7 +80,27 @@ ul {
     margin-bottom: .25rem;
 }
 
-.nav-link:hover::after {
+.nav-link-portfolio:hover::after {
+    width: 100%;
+}
+
+.nav-link-portfolio {
+    position: relative;
+}
+
+.nav-link-portfolio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 130%;
+    height: 2px;
+    background-color: var(--clr-secundario);
+    transition: .2s;
+    margin-bottom: .25rem;
+}
+
+.nav-link-portfolio:hover::after {
     width: 100%;
 }
 
@@ -427,6 +448,13 @@ button {
         transform: translateX(100%);
         visibility: hidden;
         opacity: 0;
+        transition: .2s;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
     }
 
     .nav-link {
