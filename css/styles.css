@@ -80,7 +80,7 @@ ul {
     margin-bottom: .25rem;
 }
 
-.nav-link-portfolio:hover::after {
+.nav-link:hover::after {
     width: 100%;
 }
 
