@@ -64,6 +64,17 @@ ul {
     cursor: pointer;
 }
 
+.nav-item i {
+    font-size: 2rem;
+    color: var(--clr-secundario);
+}
+
+.nav-item i:hover {
+    font-size: 2rem;
+    color: var(--clr-white);
+}
+
+
 .nav-link {
     position: relative;
 }
