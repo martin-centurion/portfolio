@@ -303,10 +303,6 @@ ul {
     background-color: var(--clr-terciario);
 }
 
-.portfolio-img article a i {
-    font-size: 2rem;
-    padding-left: 1.5rem;
-}
 
 /** FORMULARIO **/
 
@@ -511,6 +507,10 @@ button {
     
     .sobre__content {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-img article {
+        padding: 0;
     }
 }
 
