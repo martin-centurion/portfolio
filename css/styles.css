@@ -423,7 +423,7 @@ button {
 
 /** MEDIA QUERY **/
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 770px){
     .banner__content {
 
     grid-template-areas: 
@@ -509,8 +509,12 @@ button {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-img article {
-        padding: 0;
+    .portfolio-img article img {
+        width: 280px;
+    }
+
+    .portfolio-img article a {
+        width: 280px;
     }
 }
 
