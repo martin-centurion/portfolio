@@ -510,11 +510,31 @@ button {
     }
 
     .portfolio-img article img {
-        width: 280px;
+        width: 300px;
     }
 
     .portfolio-img article a {
-        width: 280px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .portfolio-img article img {
+        width: 250px;
+    }
+
+    .portfolio-img article a {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .portfolio-img article img {
+        width: 220px;
+    }
+
+    .portfolio-img article a {
+        width: 220px;
     }
 }
 
