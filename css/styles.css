@@ -13,6 +13,7 @@
     --clr-primario: rgb(33, 36, 41);
     --clr-secundario: rgb(107, 29, 235);
     --clr-terciario: rgb(40, 45, 54);
+    --clr-span: rgb(0, 232, 255);
     --clr-white: rgb(225, 225, 225);
 }
 
@@ -64,16 +65,20 @@ ul {
     cursor: pointer;
 }
 
+
 .nav-item i {
     font-size: 2rem;
     color: var(--clr-secundario);
+    transition: .3s;
 }
 
 .nav-item i:hover {
-    font-size: 2rem;
     color: var(--clr-white);
 }
 
+.nav-menu li {
+    padding: .8rem;
+}
 
 .nav-link {
     position: relative;
@@ -154,9 +159,8 @@ ul {
 }
 
 .banner__content-texto span {
-    color: var(--clr-secundario);
-    font-weight: bold;
-    border-bottom: solid .05rem var(--clr-secundario);
+    color: var(--clr-span);
+    border-bottom: solid .05rem var(--clr-span);
     padding-bottom: .25rem;
 }
 
@@ -164,30 +168,33 @@ ul {
 
 .sobre {
     background-color: var(--clr-terciario);
-    padding-block: 3rem;
+    padding-block: 4rem;
 }
 
 .sobre__content {
     display: grid;
     grid-template-columns: 1fr .8fr;
-    gap: 3rem;
+    gap: 5rem;
 }
 
-
 .sobre__content-info-titulo {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: var(--clr-secundario);
+    font-size: 2rem;
+    margin-bottom:2rem;
+    letter-spacing: .05rem;
 }
 
 .sobre__content-info-texto {
-    font-size: .9rem;
-    font-weight: 500;
-    line-height: 1.6rem;
+    line-height: 2rem;
     letter-spacing: .05rem;
     font-family: var(--ff-text);
+    font-size: 1.1rem;
 }
 
+.sobre__content-info-texto span {
+    color: var(--clr-span);
+    border-bottom: solid .05rem var(--clr-span);
+    padding-bottom: .25rem;
+}
 
 .sobre__content-tools {
     font-size: 1rem;
@@ -199,7 +206,7 @@ ul {
 }
 
 .sobre__content-tools h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 2rem;
     font-family: var(--ff-title);
     letter-spacing: .05rem;
@@ -231,7 +238,7 @@ ul {
 .sobre__content-tools i {
     color: var(--clr-secundario);
     margin-right: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .descargar-cv {
@@ -317,6 +324,7 @@ ul {
 
 /** FORMULARIO **/
 
+/**
 .form__content-header {
     padding-top: 4rem;
 }
@@ -385,6 +393,44 @@ ul {
     background-color: var(--clr-white);
     color: var(--clr-secundario);
 }
+
+**/
+
+/* CONTACTO */
+
+.contacto {
+    padding-block: 4rem;
+}
+
+.contacto__content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contacto h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .05rem;
+    line-height: 3rem;
+}
+
+.contacto p {
+    font-size: 1rem;
+    font-family: var(--ff-text);
+    margin-block: 1rem;
+}
+
+.contacto a {
+    font-size: 2rem;
+    font-family: var(--ff-title);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.contacto a:hover {
+    color: var(--clr-secundario);
+}
+
 
 /** FOOTER **/
 
