@@ -13,7 +13,7 @@
     --clr-primario: rgb(33, 36, 41);
     --clr-secundario: rgb(107, 29, 235);
     --clr-terciario: rgb(40, 45, 54);
-    --clr-span: rgb(0, 232, 255);
+    --clr-span: rgb(138, 102, 242);
     --clr-white: rgb(225, 225, 225);
 }
 
@@ -229,6 +229,11 @@ ul {
 .sobre__content-tools-wp {
     border-bottom: solid 0.35rem var(--clr-secundario);
     width: 90%;
+}
+
+.sobre__content-tools-adobe {
+    border-bottom: solid 0.35rem var(--clr-secundario);
+    width: 60%;
 }
 
 .sobre__content-tools p {
