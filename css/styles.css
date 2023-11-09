@@ -177,6 +177,10 @@ ul {
     gap: 5rem;
 }
 
+.sobre__content-about-me {
+    padding: 5rem;
+}
+
 .sobre__content-info-titulo {
     font-size: 2rem;
     margin-bottom:2rem;
